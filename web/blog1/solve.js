@@ -39,8 +39,7 @@ xhr.onreadystatechange = function () {
     if (this.status == 200) {
         var data = this.responseText;
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "/create", true);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+        xhr.open("POST", "/create", true);etRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
         xhr.send("title=joev2&body=" + btoa(data));
 
         // we get the returned data
